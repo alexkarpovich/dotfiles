@@ -33,6 +33,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tomasr/molokai'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'flazz/vim-colorschemes'
+" Debuggers
+Plugin 'joonty/vdebug'
 
 call vundle#end()
 filetype plugin indent on
@@ -47,6 +49,8 @@ set encoding=utf-8
 set fileencodings=utf-8,cp1251
 set t_Co=256
 set number
+set cursorline
+set lazyredraw
 "set background=dark
 
 " Solarized settings
@@ -81,6 +85,12 @@ let g:airline#extensions#tabline#enabled=1
 " NERDTree settings
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeWinSize = 40 
+
+" Debuggers
+let g:vdebug_opsions={
+\ 'path_map': {'/':'/'},
+\ 'server': 'localhost'
+\}
 
 " Mappings
 :imap ;; <Esc>
