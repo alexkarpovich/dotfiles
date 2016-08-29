@@ -27,6 +27,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 " Git plugin
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 " File/directory tree manager
 Plugin 'scrooloose/nerdtree'
 " Color schemes
