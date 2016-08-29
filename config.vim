@@ -8,6 +8,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Syntax highlighter
 Plugin 'scrooloose/syntastic'
+Plugin 'Yggdroot/indentLine'
 "Plugin 'elzr/vim-json'
 "Plugin 'plasticboy/vim-markdown'
 "Plugin 'othree/html5.vim'
@@ -52,7 +53,7 @@ set t_Co=256
 set number
 set cursorline
 set lazyredraw
-"set background=dark
+set background=dark
 
 " Solarized settings
 let g:solarized_termcolors=256
@@ -88,9 +89,9 @@ map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeWinSize = 40 
 
 " Debuggers
-let g:vdebug_opsions={
-\ 'path_map': {'/':'/'},
-\ 'server': 'localhost'
+let g:vdebug_options={
+\ 'path_maps': {'/vagrant': '/home/aliaksandr/dev/invex'},
+\ 'break_on_open': 0
 \}
 
 " Mappings
